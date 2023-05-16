@@ -7,4 +7,14 @@
 .container{
     width: 100%;
     max-width: 1420px;
+    background-color: black;
+}
+
+.header_inner{
+    padding: 33px;
+    
+}
+
+.header_inner p{
+    text-color:#666666;
 }
