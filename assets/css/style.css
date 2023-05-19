@@ -41,7 +41,7 @@ p {
 
 .container {
     width: 100%;
-    max-width: 1420px !important;
+    max-width: 1444px !important;
 }
 
 /* Header Section */
@@ -233,14 +233,13 @@ p {
 }
 
 .end_mint_box {
-    width: 257px;
-    /* margin-right: 34px; */
+    /* width: 257px; */
     background-color: #242424;
     border: 1px solid #3F3F3F;
     border-radius: 6px;
 }
 
-.end_mint_box img {
+.mint_image_end {
     width: 100%;
     margin-bottom: 12px;
 }
@@ -279,27 +278,142 @@ p {
     line-height: 20px;
 }
 
-.right_txt_1{
+.end_price_time :first-child{
+    padding-bottom: 3px;
+}
+
+.right_txt_1 {
     color: #FF346B;
 }
 
-.btn__edition{
-    margin-top: 15px;
+.btn__edition {
+    margin-top: 12px;
 }
-.open__btn{
+
+.open__btn {
     background-color: #ED15FB;
     color: #fff;
     border: 1px solid #3F3F3F;
     border-radius: 4px;
-    padding: 8px; 
+    padding: 8px;
     font-weight: 600;
     font-size: 12px;
     line-height: 15px;
     width: 100%;
 }
+
 /* end End Minting */
 
 /* Auction */
+.auction {
+    padding-bottom: 180px;
+}
 
+.auction_box {
+    position: relative;
+    background-color: #242424;
+    border: 1px solid #3F3F3F;
+    border-radius: 6px;
+}
+.aution_image {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.auction_box > p{
+    position: absolute;
+    top: 0;
+    border: 1px solid #CCCCCC;
+    border-radius: 45px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 9px 15px;
+    margin-top: 12px;
+    margin-left: 110px;
+}
+
+
+
+.auction_bottom {
+    padding: 0px 10px 19px;
+}
+
+.auction__img_txt p{
+    position: absolute;
+}
+
+hr {
+    margin-top: 22px;
+    margin-bottom: 12px;
+    border: 1px solid #3F3F3F;
+}
+
+.auction__active {
+    text-align: right;
+}
+
+.gap__active{
+    gap: 4px;
+}
+
+.dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #00FF6E;
+}
 
 /* end Auction */
+
+/* Trending */
+.trending{
+    padding-bottom: 180px;
+}
+
+.trending_box{
+    background-color: #242424;
+    border: 1px solid #3F3F3F;
+    border-radius: 6px;
+    padding: 15px 15px;
+
+}
+
+.trending_box img{
+    margin-bottom: 11px;
+    width: 100%;
+}
+
+.ella_price :first-child{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.ella_price :last-child{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.eslabon :first-child{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.eslabon :last-child{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ED15FB;
+}
+/* end Trending */
+/* Artist Trending */
+.artist{
+    padding-bottom: 180px;
+}
+
+
+/* end Artist Trending */
