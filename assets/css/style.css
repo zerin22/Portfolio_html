@@ -269,19 +269,14 @@ p {
     line-height: 15px;
 }
 
-.end-price_time {
+.price_end {
     margin-top: 14px;
 }
 
-.end-price_time p {
+.end_price_time p {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-}
-
-.price__right {
-    text-align: right;
-
 }
 
 .right_txt_1{
@@ -303,3 +298,8 @@ p {
     width: 100%;
 }
 /* end End Minting */
+
+/* Auction */
+
+
+/* end Auction */
