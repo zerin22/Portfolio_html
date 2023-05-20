@@ -138,7 +138,8 @@ p {
 }
 
 .banner__img img {
-    width: 100%;
+    width: 683px;
+    height: 651px;
 }
 
 /* End Banner Section */
@@ -595,11 +596,13 @@ hr {
     background-color: #181818;
 }
 
-.footer_hr{
-    margin-top: 22px;
-    margin-bottom: 40px;
-    border: 1px solid #3F3F3F;
+.footer_inner{
+    padding-top: 113px;
+    padding-bottom: 107px;
+    border-bottom: 1px solid #3F3F3F;
+
 }
+
 
 .bottom__navbar a{
     font-weight: 500;
@@ -619,7 +622,54 @@ hr {
     font-weight: 400;
     font-size: 14px;
     line-height: 26px;
+    padding-top: 40px;
     padding-bottom: 33px;
     text-align: center;
 }
 /* end footer */
+
+
+@media screen and (max-width:991px) {
+    .header_search input{
+        width: 200px;
+    }
+
+    .inner__boxes{
+        flex-direction: column;
+    }
+    
+    .footer_inner{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:600px) {
+    .header_search input{
+        width: 200px;
+    }
+
+    .inner__boxes{
+        flex-direction: column;
+    }
+    
+    .footer_inner{
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .footer_logo img{
+        margin-bottom: 20px;
+        padding-left: 130px;
+    }
+
+    .bottom__navbar {
+        flex-direction: column;    
+    }
+    .cureted_box__img > p {
+        margin-top: 14px;
+        margin-left: 155px;
+    }
+
+    .auction_img > p {
+        margin-left: 150px;
+    }
+}
