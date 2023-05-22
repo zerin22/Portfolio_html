@@ -66,6 +66,7 @@ p {
     background: #222122;
     padding: 10px 35px;
     color: #fff;
+    z-index: 9999;
 }
 
 .search__input input::placeholder {
