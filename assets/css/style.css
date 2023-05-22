@@ -130,16 +130,20 @@ p {
     border-radius: 5px;
     background: linear-gradient(#0B0807, #0B0807)padding-box,
         linear-gradient(45deg, #E500E5, #00E3DE) border-box;
+
+    transition: all 0.5s ease-out;
 }
 
 .button__explore button:hover {
     background: linear-gradient(45deg, #E500E5, #00E3DE)padding-box,
         linear-gradient(45deg, #E500E5, #00E3DE) border-box;
+    
 }
 
 .banner__img img {
-    width: 683px;
+    width: 100%;
     height: 651px;
+    transform: scale(1.5);
 }
 
 /* End Banner Section */
@@ -183,11 +187,10 @@ p {
 .open__mint__img img {
     width: 100%;
     height: 264px;
+    transition: 0.4s ease-in-out;
 }
 
 .open__mint__img img:hover {
-    /* border: 3px solid #3F3F3F;
-    border-radius: 6px; */
     transform: scale(1.02);
     cursor: pointer;
 }
@@ -261,7 +264,9 @@ p {
 
 .mint_image_end {
     width: 100%;
+    height: 257px;
     margin-bottom: 12px;
+    transition: 0.4s ease-in-out;
 }
 
 .end_mint_box img:hover {
@@ -324,6 +329,7 @@ p {
     font-size: 12px;
     line-height: 15px;
     width: 100%;
+    transition: .4s ease-in;
 }
 
 .open__btn:hover {
@@ -356,6 +362,8 @@ p {
     margin-bottom: 15px;
     width: 100%;
     height: 257px;
+    object-fit: cover;
+    transition: 0.4s ease-in-out;
 }
 
 .auction_img img:hover {
@@ -429,6 +437,8 @@ hr {
     margin-bottom: 11px;
     width: 100%;
     height: 249px;
+    object-fit: cover;
+    transition: 0.4s ease-in-out;
 }
 
 .tranding__img img:hover {
@@ -473,6 +483,8 @@ hr {
     width: 100%;
     height: 249px;
     margin-bottom: 12px;
+    object-fit: cover;
+    transition: 0.4s ease-in-out;
 }
 
 .artist__img img:hover {
@@ -501,6 +513,7 @@ hr {
     width: 100%;
     margin-bottom: 25px;
     height: 313px;
+    transition: 0.4s ease-in-out;
 }
 
 .cureted_box__img img:hover {
@@ -571,6 +584,8 @@ hr {
     width: 100%;
     height: 227px;
     margin-bottom: 15px;
+    object-fit: cover;
+    transition: 0.4s ease-in-out;
 }
 .tr_album__img img:hover {
     transform: scale(1.02);
@@ -597,10 +612,10 @@ hr {
 }
 
 .footer_inner{
-    padding-top: 113px;
-    padding-bottom: 107px;
+    /* padding-top: 113px;
+    padding-bottom: 107px; */
     border-bottom: 1px solid #3F3F3F;
-
+    padding:113px 10px 107px 10px;
 }
 
 
@@ -628,6 +643,60 @@ hr {
 }
 /* end footer */
 
+@media screen and (max-width:1440){
+    .banner__img img {
+        transform: scale(1);
+    }
+    
+}
+
+@media screen and (max-width:1024px){
+    .auction_img > p {
+        margin-left: 18px;
+    }
+
+    .cureted_box__img > p {
+        margin-top: 12px;
+        margin-left: 12px;
+    }
+
+    .banner__img img {
+        transform: scale(1);
+    }
+
+    .album p {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .time {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .ella_price :first-child {
+        font-size: 16px;
+    }
+
+    .ella_price :last-child {
+        font-size: 18px;
+    }
+
+    .all_want :last-child {
+        font-size: 20px;
+    }
+
+    .tr_album_footer :last-child {
+        font-size: 17px;
+        line-height: 16px;
+    }
+    
+}
+
 
 @media screen and (max-width:991px) {
     .header_search input{
@@ -642,23 +711,215 @@ hr {
         flex-direction: column;
     }
 }
+
+@media screen and (max-width:768px){
+
+    .footer_inner{
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner__img img {
+       display: none;
+    }
+
+    .banner_inner{
+        align-items: center;
+        text-align: center;
+        padding: 0px 10px;
+    }
+
+    .sr_bt{
+        margin-bottom: 10px;
+    }
+
+    .button__explore{
+        display: flex;
+        justify-content: center;
+    }
+
+    .mint_image_end {
+        height: 550px;
+        object-fit: cover;
+    }
+
+    .auction_img img{
+        height: 550px;
+    }
+
+    .tranding__img img{
+        height: 550px;
+    }
+
+    .cureted_box__img > p {
+        margin-top: 14px;
+        margin-left: 10px;
+    }
+
+    .auction_img > p {
+        margin-left: 10px;
+    }
+
+    .artist__img img {
+        width: 100%;
+        height: 550px;
+        object-fit: fill;
+    }
+
+    .tr_album__img img {
+        height: 450px;
+    }
+
+    .open__minting {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .mint__end {
+        padding-bottom: 70px;
+    }
+
+    .auction {
+        padding-bottom: 70px;
+    }
+
+    .artist {
+        padding-bottom: 70px;
+    }
+
+    .trending {
+        padding-bottom: 70px;
+    }
+
+    .curated {
+        padding-bottom: 70px;
+    }
+    .tagged__songs {
+        padding-bottom: 70px;
+    }
+
+    .tranding__album {
+        padding-bottom: 70px;
+    }
+
+}
 @media screen and (max-width:600px) {
     .header_search input{
         width: 200px;
     }
 
+    h1 {
+        font-size: 35px;
+        font-weight: bold;
+        line-height: 45px;
+        letter-spacing: 0.02em;
+    }
+
+    h2 {
+        font-size: 33px;
+        font-weight: bold;
+        line-height: 30px;
+        color: #fff;
+    }
+    .banner__text p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        margin-bottom: 40px;
+    }  
+    
+    .button__explore{
+        display: flex;
+        justify-content: center;
+    }
+
+    .header_inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header_search{
+        flex-direction: column;
+    } 
+
+    .banner_section {
+        padding-top: 20px;
+    }
+
+    .banner_inner{
+        align-items: center;
+        text-align: center;
+        padding: 0px 10px;
+    }
+
+    .sr_bt{
+        margin-bottom: 10px;
+    }
+
+    .banner__img img {
+        display: none;
+    }
+
+    .mint__header{
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    .mint__header a {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        padding-right: 6px;
+        margin-top: 10px;
+    }
+
     .inner__boxes{
         flex-direction: column;
+    }
+
+    .album p {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .time {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .ella_price :first-child {
+        font-size: 16px;
+    }
+
+    .ella_price :last-child {
+        font-size: 18px;
+    }
+
+    .all_want :last-child {
+        font-size: 20px;
+    }
+
+    .tr_album_footer :last-child {
+        font-size: 20px;
     }
     
     .footer_inner{
         flex-direction: column;
         padding-top: 30px;
         padding-bottom: 30px;
+        flex-direction: column;
+        align-items: center;
     }
     .footer_logo img{
         margin-bottom: 20px;
-        padding-left: 130px;
     }
 
     .bottom__navbar {
@@ -666,10 +927,82 @@ hr {
     }
     .cureted_box__img > p {
         margin-top: 14px;
-        margin-left: 155px;
+        margin-left: 10px;
     }
 
     .auction_img > p {
-        margin-left: 150px;
+        margin-left: 10px;
     }
+
+    .artist__img img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .open__minting {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .mint__end {
+        padding-bottom: 70px;
+    }
+
+    .auction {
+        padding-bottom: 70px;
+    }
+
+    .artist {
+        padding-bottom: 70px;
+    }
+
+    .trending {
+        padding-bottom: 70px;
+    }
+
+    .curated {
+        padding-bottom: 70px;
+    }
+    .tagged__songs {
+        padding-bottom: 70px;
+    }
+
+    .tranding__album {
+        padding-bottom: 70px;
+    }
+
+    .open__mint__img img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .banner__img img {
+        width: 100%;
+        transform: scale(1);
+    }
+
+    @media screen and (max-width:320px) {
+
+        .footer_inner{
+            align-items: center;
+        }
+
+        .header_inner {
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .header_search{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .banner__img img {
+            width: 100%;
+            transform: scale(1);
+        }
+        
+    }
+
 }
